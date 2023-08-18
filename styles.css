@@ -1,0 +1,186 @@
+  @font-face {
+    font-family: norse;
+    src: url(images/Norse-Bold.otf);
+  }
+  
+  .ital {
+    font-style: italic;
+  }
+  body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    max-width: 60rem;
+    font-family: arial, sans-serif;
+  }
+
+  .photo-area {
+    flex: 1;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-area_banner {
+    margin-top: 45%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* border: 1px solid red; */
+  }
+
+  .logo {
+    max-width: 19%;
+    max-height: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .photo-area_title {
+    font-size: 4rem;
+    font-family: norse, sans-serif;
+    padding-top: 1rem;
+    color: white;
+    /* border: 1px solid red; */
+  }
+
+  .photo-area_footer {
+    position: absolute;
+    bottom: .5rem;
+    font-size: .55rem;
+    color: white;
+  }
+
+  .photo-area_footer > a {
+    color: white;
+  }
+
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 248, 250);
+  }
+
+  .main_text {
+    flex: 1; 
+    font-weight: bold;
+  }
+
+  .main_text > p:first-child {
+    padding: 6rem 6rem 1rem 2rem;
+  }
+
+  .main_text > p:last-child {
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .form {
+    flex: 1;
+    background-color: white;
+    padding: 1rem 8rem 1rem 2rem;
+    box-shadow: 0px 2px 8px -5px black; 
+    /* border: 1px solid green; */
+  }
+
+  .form > h2 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .form_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: .5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* border: 1px solid green; */
+  }
+
+  /* .input_container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    padding-bottom: 1rem;
+  } */
+
+  .input_set {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    /* border: 1px solid red; */
+  }
+
+  input {
+    font-size: .8rem;
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+    width: 80%;
+  }
+
+  input:focus {
+    outline: none;
+    border-bottom: 1px solid blue;
+    border-right: 1px solid blue;
+    box-shadow: 1px 1px 4px -1px black; 
+  }
+
+  input:invalid {
+    border: 1px solid red;
+  }
+
+  .error {
+    border: 1px solid red;
+  }
+
+  .form_cta {
+    flex: 1;
+    font-size: .75rem;
+    padding: 2rem 2rem 6rem 2rem;
+  }
+
+  .form_cta > button {
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    padding: .6rem 2.5rem;
+    border-radius: .5rem;
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  .form_cta > p > a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+  }
+
+  @media (max-width: 37rem) {
+    main {
+        flex-direction: column;
+    }
+    .photo-area {
+       height: 50vh;
+       max-width: 100vw;
+    }
+    .photo-area_footer {
+        position: relative;
+    }
+    .main_text > p:first-child {
+        padding: 2rem;
+    }
+  }
